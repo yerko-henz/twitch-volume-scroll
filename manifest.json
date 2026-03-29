@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Twitch volume scroll",
+  "version": "1.0",
+  "description": "Adjust video volume by using the scroll wheel over twitch.",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["script.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "permissions": ["storage"]
+}
